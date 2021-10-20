@@ -1,3 +1,8 @@
+"""
+This mini project asked me to recreate the "Code Master" board game between the user and the computer. The premise of the game is that the user 
+tries to figure out four random colors picked by the computer in the as little moves as possible.
+"""
+
 import random
 import pytest
 
