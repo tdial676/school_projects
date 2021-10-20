@@ -1,19 +1,11 @@
 '''
------------------------------
-Animation Template - Advanced
------------------------------
-This file contains the template for an advanced animation file. Remember to:
-    - Declare your global game variables (SpriteLists, score, etc.)in
-      the __init__() method
-    - Initialize game variables (player, items, etc.) in the setup() method
-    - Put the initial render code in the on_draw() method
-    - Anything that changes over time (a.k.a. the actual animation part) goes
-      in the update() method
 
-Below the update() method are all of the mouse event methods, followed by the
-key event methods. Feel free to use as many or as few of these as you like.
-See each method for information on how they are used, feel free to delete any
-of the methods that you don't use.
+This was my first high school CS project. In this project, I utilized the arcade library to create a 2D interactive game. 
+The premise of the game is to use the arrow keys to catch basketballs falling from different heights and with different speeds. 
+For each basketball the user catches, their score increases by 1. Footballs will fall randomly as bonus points worth more than
+a basketball. The user has a certain number of lives and each time a basketball hits the ground they lose one life point. 
+When the user is out of life points, the game is over and their score is printed out with a retry option. 
+
 '''
 
 import arcade
@@ -235,78 +227,7 @@ class MyGame(arcade.Window):
             self.time_since_last_ball = 0
 
 
-
-
-
-
-    ############################################################
-    # MOUSE METHODS: feel free to delete any you're not using! #
-    ############################################################
-
-    def on_mouse_motion(self, x, y, dx, dy):
-        '''
-        Automatically called whenever the mouse is moved
-            x   float   x-coordinate at moment of update
-            y   float   y-coordinate at moment of update
-            dx  float   speed/direction of horizontal movement
-            dy  float   speed/direction of vertical movement
-        '''
-        pass
-
-    def on_mouse_drag(self, x, y, dx, dy, button, modifiers):
-        '''
-        Automatically called whenever the mouse is dragged (a.k.a. pressed and
-        moved at the same time)
-            x           float   x-coordinate at moment of update
-            y           float   y-coordinate at moment of update
-            dx          float   speed/direction of horizontal movement
-            dy          float   speed/direction of vertical movement
-            button      int     1 if left-click, 4 if right-click
-            modifiers   int     (see reference at bottom of file)
-        '''
-        pass
-
-    def on_mouse_press(self, x, y, button, modifiers):
-        '''
-        Automatically called whenever the mouse is clicked
-            x           float   x-coordinate of click
-            y           float   y-coordinate of click
-            button      int     1 if left-click, 4 if right-click
-            modifiers   int     (see reference at bottom of file)
-        '''
-        pass
-
-    def on_mouse_release(self, x, y, button, modifiers):
-        '''
-        Automatically called whenever the mouse is clicked
-            x           float   x-coordinate of click
-            y           float   y-coordinate of click
-            button      int     1 if left-click, 4 if right-click
-            modifiers   int     (see reference at bottom of file)
-        '''
-        pass
-
-    def on_mouse_scroll(self, x, y, scroll_x, scroll_y):
-        '''
-        Automatically called whenever the mouse is scrolled
-            x           int     x-coordinate of scroll
-            y           int     y-coordinate of scroll
-            scroll_x    int     speed/direction of horizontal scroll
-            scroll_y    int     speed/direction of vertical scroll
-        '''
-        pass
-
-    ##########################################################
-    # KEY METHODS: feel free to delete any you're not using! #
-    ##########################################################
-
     def on_key_press(self, symbol, modifiers):
-        '''
-        Automatically called whenever a key is pressed
-            symbol      int     code for key pressed (from ASCII table)
-                                Note: chr(symbol) returns the string
-            modifiers   int     (see reference at bottom of file)
-        '''
         #if the user presses the left key the player moves left
         if symbol == arcade.key.LEFT:
             self.player.change_x = -self.speed
@@ -315,12 +236,6 @@ class MyGame(arcade.Window):
             self.player.change_x = self.speed
 
     def on_key_release(self, symbol, modifiers):
-        '''
-        Automatically called whenever a key is released
-            symbol      int     code for key pressed (from ASCII table)
-                                Note: chr(symbol) returns the string
-            modifiers   int     (see reference at bottom of file)
-        '''
         #when either key is released the player does not change position
         if symbol == arcade.key.LEFT or symbol == arcade.key.RIGHT:
             self.player.change_x = 0
@@ -336,15 +251,3 @@ if __name__ == "__main__":
     main()
 
 
-
-'''
-Mouse event modifiers:
-    0       (none)
-    1       shift
-    2       ctrl
-    8       caps lock
-    64      cmd
-    132     alt/option
-    512     fn
-Test it out yourself for any combinations of these!
-'''
