@@ -5,9 +5,6 @@ CS 1 Assignment 3, section C.
 
 Miniproject on L-systems (Lindenmayer systems).
 
-References:
-  http://en.wikipedia.org/wiki/L-systems
-  http://www.kevs3d.co.uk/dev/lsystems/
 """
 
 import math
@@ -16,11 +13,6 @@ import math
 # ----------------------------------------------------------------------
 # Example L-systems.
 # ----------------------------------------------------------------------
-
-# Each L-system consists of two dictionaries:
-# 1) a dictionary giving the start state and the transition rules
-# 2) a dictionary giving the drawing commands associated with L-system
-#    characters
 
 
 # Koch snowflake.
