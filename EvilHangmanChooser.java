@@ -1,4 +1,6 @@
 package edu.caltech.cs2.project02.choosers;
+/*This project recreate and "Evil" Hangman meaning that the computer will start off without having a word, 
+and only picks a word once the users guesses forces it to.*/
 
 import edu.caltech.cs2.project02.interfaces.IHangmanChooser;
 
