@@ -1,4 +1,5 @@
 package edu.caltech.cs2.project02.choosers;
+/*This program plays hangman with the user.*/
 
 import edu.caltech.cs2.project02.interfaces.IHangmanChooser;
 
