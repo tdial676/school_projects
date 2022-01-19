@@ -1,4 +1,5 @@
 package edu.caltech.cs2.project02.guessers;
+/*This program creates an AI that attempts to guess the word in Hangman while minimizing total guesses*/
 
 import edu.caltech.cs2.project02.interfaces.IHangmanGuesser;
 
