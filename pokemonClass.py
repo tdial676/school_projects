@@ -1,9 +1,6 @@
 """
 Thierno Diallo
 
-Starter code for Lab 6, including implementations introduced in Lectures 22
-and 23.
-
 This program defines classes for Pokemon management, including
 PokemonSpecies, Pokemon, and Pokedex.
 
